@@ -19,6 +19,7 @@ Remove the null values from the data
 Save the Clean data to the file
 
 # CODE
+```py
 import pandas as pd
 import numpy as np
 import seaborn as sns
@@ -41,7 +42,7 @@ df['current_overall_rank'].fillna(df['current_overall_rank'].mean())
 df['watchers']=df['watchers'].fillna(df['watchers'].mean())
 df.isnull().sum()
 df.info()
-
+```
 # OUPUT
 ### Dataset:
 ### Head:
